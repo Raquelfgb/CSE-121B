@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register of Primary Kids</title>
+    <meta name="description" content="Register of Primary Kids in Elbow River Ward - Calgary-AB" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/game.css" />
+</head>
+
+<body>
+    <div class="form">
+        <h3><strong>REGISTRATION FORM</strong></h3>
+        <p>Please fill the form below with your information to the records:</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/003/177/760/original/jesus-christ-with-children-group-sticker-on-white-background-free-vector.jpg" alt="Jesus and the children">
+        <div class="space2"></div>
+        <div class="form-div">
+            <div class="lname-div">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Write your last name here" required />
+            </div>
+
+            <div class="fname-div">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Write your first name here" required />
+            </div>
+
+            <div class="dob-div">
+                <label for="dob">Birthdate</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <div class="gender-div">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="address-div">
+                <label for="address">Address </label>
+                <input type="text" id="address" name="address" placeholder="Write your address here" required />
+            </div>
+
+            <div class="class-div">
+                <label for="class">Class</label>
+                <select id="class" name="class" required>
+                    <option value="jss1">CTR</option>
+                    <option value="jss2">Valiant</option>
+                </select>
+            </div>
+            <div class="submit-container">
+                <button class="submit" type="submit">Submit Form</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <section class="profile-section">
+        <section class="profile-heading">
+            <h1>Children Profile</h1>
+            <h2 id="kidName"></h2>
+            <h4>Children Number: <span id="kidNo"></span></h4>
+        </section>
+        <section>
+            <h3>Children Information</h3>
+            <div>
+                <h4>Gender:</h4>
+                <p id="profileGender"></p>
+            </div>
+            <div>
+                <h4>Birthdate:</h4>
+                <p id="profileDob"></p>
+            </div>
+            <div>
+                <h4>Address:</h4>
+                <p id="profileAddress"></p>
+            </div>
+            <div>
+                <h4>Class:</h4>
+                <p id="profileClass"></p>
+            </div>
+        </section>
+    </section>
+    <script src="./script/game.js"></script>
+</body>
+
+</html>
